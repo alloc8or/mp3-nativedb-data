@@ -4895,6 +4895,25 @@
 			"params": [],
 			"return_type": "Any"
 		},
+		"static voi": {
+			"name": "SCRIPT_ASSERT",
+			"comment": "",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "format"
+				},
+				{
+					"type": "int",
+					"name": "argCount"
+				},
+				{
+					"type": "",
+					"name": "..."
+				}
+			],
+			"return_type": "void"
+		},
 		"0xA754055A": {
 			"name": "OPEN_DEBUG_FILE",
 			"comment": "This native is not used in the scripts.",
@@ -5279,6 +5298,48 @@
 			"params": [],
 			"return_type": "void"
 		},
+		"static voi": {
+			"name": "DISPLAYF",
+			"comment": "",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "format"
+				},
+				{
+					"type": "int",
+					"name": "argCount"
+				},
+				{
+					"type": "",
+					"name": "..."
+				}
+			],
+			"return_type": "void"
+		},
+		"static voi": {
+			"name": "ASSERTF",
+			"comment": "This native is not used in the scripts.",
+			"params": [
+				{
+					"type": "BOOL",
+					"name": "p0"
+				},
+				{
+					"type": "const char*",
+					"name": "format"
+				},
+				{
+					"type": "int",
+					"name": "argCount"
+				},
+				{
+					"type": "",
+					"name": "..."
+				}
+			],
+			"return_type": "void"
+		},
 		"0x6700C96C": {
 			"name": "SET_ENABLE_PED_PROCESS_INTELLIGENCE",
 			"comment": "This native is not used in the scripts.",
@@ -5336,6 +5397,44 @@
 			],
 			"return_type": "void"
 		},
+		"static BOO": {
+			"name": "UI_SET",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "index"
+				},
+				{
+					"type": "int",
+					"name": "argCount"
+				},
+				{
+					"type": "",
+					"name": "..."
+				}
+			],
+			"return_type": "BOOL"
+		},
+		"static BOO": {
+			"name": "UI_GET",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "index"
+				},
+				{
+					"type": "int",
+					"name": "argCount"
+				},
+				{
+					"type": "",
+					"name": "..."
+				}
+			],
+			"return_type": "BOOL"
+		},
 		"0x32852FD0": {
 			"name": "UI_DOES_FRAME_EXIST_HASH",
 			"comment": "",
@@ -5357,6 +5456,67 @@
 				}
 			],
 			"return_type": "BOOL"
+		},
+		"static voi": {
+			"name": "UI_SET_MP_BIG_NUMBER",
+			"comment": "This native is not used in the scripts.",
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				},
+				{
+					"type": "int",
+					"name": "argCount"
+				},
+				{
+					"type": "",
+					"name": "..."
+				}
+			],
+			"return_type": "void"
+		},
+		"static int": {
+			"name": "UI_GET_SELECTED_INDEX",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "argCount"
+				},
+				{
+					"type": "",
+					"name": "..."
+				}
+			],
+			"return_type": "int"
+		},
+		"static voi": {
+			"name": "UI_SET_WORLDCONTAINER_POS",
+			"comment": "This native is not used in the scripts.",
+			"params": [
+				{
+					"type": "float",
+					"name": "x"
+				},
+				{
+					"type": "float",
+					"name": "y"
+				},
+				{
+					"type": "float",
+					"name": "z"
+				},
+				{
+					"type": "int",
+					"name": "argCount"
+				},
+				{
+					"type": "",
+					"name": "..."
+				}
+			],
+			"return_type": "void"
 		},
 		"0xDA1F284A": {
 			"name": "UI_ADD_MP_HITMARK",
@@ -11781,6 +11941,87 @@
 			"name": "RESET_LAST_MAN_STANDING",
 			"comment": "",
 			"params": [],
+			"return_type": "void"
+		},
+		"static voi": {
+			"name": "STRING_FORMAT",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "bufferSize"
+				},
+				{
+					"type": "char*",
+					"name": "buffer"
+				},
+				{
+					"type": "const char*",
+					"name": "formatOrTextLabel"
+				},
+				{
+					"type": "int",
+					"name": "argCount"
+				},
+				{
+					"type": "",
+					"name": "..."
+				}
+			],
+			"return_type": "void"
+		},
+		"static voi": {
+			"name": "STRING_FORMAT_HASH",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "bufferSize"
+				},
+				{
+					"type": "char*",
+					"name": "buffer"
+				},
+				{
+					"type": "Hash",
+					"name": "textLabelHash"
+				},
+				{
+					"type": "int",
+					"name": "argCount"
+				},
+				{
+					"type": "",
+					"name": "..."
+				}
+			],
+			"return_type": "void"
+		},
+		"static voi": {
+			"name": "STRING_APPEND",
+			"comment": "",
+			"params": [
+				{
+					"type": "int",
+					"name": "bufferSize"
+				},
+				{
+					"type": "char*",
+					"name": "buffer"
+				},
+				{
+					"type": "const char*",
+					"name": "formatOrTextLabel"
+				},
+				{
+					"type": "int",
+					"name": "argCount"
+				},
+				{
+					"type": "",
+					"name": "..."
+				}
+			],
 			"return_type": "void"
 		},
 		"0xC1389FB0": {
@@ -38964,6 +39205,36 @@
 			],
 			"return_type": "void"
 		},
+		"static voi": {
+			"name": "STAT_WAIT",
+			"comment": "This native is not used in the scripts.",
+			"params": [
+				{
+					"type": "int",
+					"name": "argCount"
+				},
+				{
+					"type": "",
+					"name": "..."
+				}
+			],
+			"return_type": "void"
+		},
+		"static voi": {
+			"name": "STAT_WAIT_UNTIL_EXIST",
+			"comment": "This native is not used in the scripts.",
+			"params": [
+				{
+					"type": "int",
+					"name": "argCount"
+				},
+				{
+					"type": "",
+					"name": "..."
+				}
+			],
+			"return_type": "void"
+		},
 		"0xFF735813": {
 			"name": "SCRIPT_VAR_HASH_WAIT_FOR_CHANGE_INT",
 			"comment": "This native is not used in the scripts.",
@@ -38987,6 +39258,36 @@
 			"comment": "This native is not used in the scripts.",
 			"params": [],
 			"return_type": "Any"
+		},
+		"static voi": {
+			"name": "SCRIPT_VAR_WAIT",
+			"comment": "This native is not used in the scripts.",
+			"params": [
+				{
+					"type": "int",
+					"name": "argCount"
+				},
+				{
+					"type": "",
+					"name": "..."
+				}
+			],
+			"return_type": "void"
+		},
+		"static voi": {
+			"name": "SCRIPT_VAR_WAIT_UNTIL_EXIST",
+			"comment": "This native is not used in the scripts.",
+			"params": [
+				{
+					"type": "int",
+					"name": "argCount"
+				},
+				{
+					"type": "",
+					"name": "..."
+				}
+			],
+			"return_type": "void"
 		},
 		"0x2146FEC9": {
 			"name": "STAT_HASH_EXISTS",
