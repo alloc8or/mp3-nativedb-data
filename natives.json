@@ -4895,7 +4895,7 @@
 			"params": [],
 			"return_type": "Any"
 		},
-		"static voi": {
+		"0xD9BCCE95": {
 			"name": "SCRIPT_ASSERT",
 			"comment": "",
 			"params": [
@@ -5298,7 +5298,7 @@
 			"params": [],
 			"return_type": "void"
 		},
-		"static voi": {
+		"0x5B03B710": {
 			"name": "DISPLAYF",
 			"comment": "",
 			"params": [
@@ -5317,7 +5317,7 @@
 			],
 			"return_type": "void"
 		},
-		"static voi": {
+		"0xA3D74DD5": {
 			"name": "ASSERTF",
 			"comment": "This native is not used in the scripts.",
 			"params": [
@@ -5397,7 +5397,7 @@
 			],
 			"return_type": "void"
 		},
-		"static BOO": {
+		"0xA2A179B2": {
 			"name": "UI_SET",
 			"comment": "",
 			"params": [
@@ -5416,7 +5416,7 @@
 			],
 			"return_type": "BOOL"
 		},
-		"static BOO": {
+		"0x09608938": {
 			"name": "UI_GET",
 			"comment": "",
 			"params": [
@@ -5457,7 +5457,7 @@
 			],
 			"return_type": "BOOL"
 		},
-		"static voi": {
+		"0xE903DA08": {
 			"name": "UI_SET_MP_BIG_NUMBER",
 			"comment": "This native is not used in the scripts.",
 			"params": [
@@ -5476,7 +5476,7 @@
 			],
 			"return_type": "void"
 		},
-		"static int": {
+		"0x8B63A008": {
 			"name": "UI_GET_SELECTED_INDEX",
 			"comment": "",
 			"params": [
@@ -5491,7 +5491,7 @@
 			],
 			"return_type": "int"
 		},
-		"static voi": {
+		"0x73F91E06": {
 			"name": "UI_SET_WORLDCONTAINER_POS",
 			"comment": "This native is not used in the scripts.",
 			"params": [
@@ -11943,7 +11943,7 @@
 			"params": [],
 			"return_type": "void"
 		},
-		"static voi": {
+		"0x1EBBD64A": {
 			"name": "STRING_FORMAT",
 			"comment": "",
 			"params": [
@@ -11970,7 +11970,7 @@
 			],
 			"return_type": "void"
 		},
-		"static voi": {
+		"0xA1091C07": {
 			"name": "STRING_FORMAT_HASH",
 			"comment": "",
 			"params": [
@@ -11997,7 +11997,7 @@
 			],
 			"return_type": "void"
 		},
-		"static voi": {
+		"0xD00EC3B6": {
 			"name": "STRING_APPEND",
 			"comment": "",
 			"params": [
@@ -39205,7 +39205,7 @@
 			],
 			"return_type": "void"
 		},
-		"static voi": {
+		"0x6E4FDBAF": {
 			"name": "STAT_WAIT",
 			"comment": "This native is not used in the scripts.",
 			"params": [
@@ -39220,7 +39220,7 @@
 			],
 			"return_type": "void"
 		},
-		"static voi": {
+		"0x7B9443BF": {
 			"name": "STAT_WAIT_UNTIL_EXIST",
 			"comment": "This native is not used in the scripts.",
 			"params": [
@@ -39259,7 +39259,7 @@
 			"params": [],
 			"return_type": "Any"
 		},
-		"static voi": {
+		"0xB4A10F8D": {
 			"name": "SCRIPT_VAR_WAIT",
 			"comment": "This native is not used in the scripts.",
 			"params": [
@@ -39274,7 +39274,7 @@
 			],
 			"return_type": "void"
 		},
-		"static voi": {
+		"0x1348D449": {
 			"name": "SCRIPT_VAR_WAIT_UNTIL_EXIST",
 			"comment": "This native is not used in the scripts.",
 			"params": [
