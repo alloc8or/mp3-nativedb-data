@@ -23357,7 +23357,7 @@
 		},
 		"0x6E31E993": {
 			"name": "GET_PLAYER_PED",
-			"comment": "",
+			"comment": "Returns the ped handle of the given player.",
 			"params": [
 				{
 					"type": "Player",
