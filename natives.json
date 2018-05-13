@@ -45269,34 +45269,34 @@
 				},
 				{
 					"type": "float",
-					"name": "xPos"
+					"name": "posX"
 				},
 				{
 					"type": "float",
-					"name": "yPos"
+					"name": "posY"
 				},
 				{
 					"type": "float",
-					"name": "zPos"
+					"name": "posZ"
 				},
 				{
 					"type": "float",
-					"name": "xRot"
+					"name": "rotX"
 				},
 				{
 					"type": "float",
-					"name": "yRot"
+					"name": "rotY"
 				},
 				{
 					"type": "float",
-					"name": "zRot"
+					"name": "rotZ"
 				},
 				{
 					"type": "float",
 					"name": "scale"
 				}
 			],
-			"return_type": "void"
+			"return_type": "BOOL"
 		},
 		"0xD120A4B4": {
 			"name": "START_PARTICLE_FX_NON_LOOPED_AT_COORD_WITH_GROUND_PLANE",
@@ -45321,311 +45321,352 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "ptfxName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "offsetX"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "offsetY"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "offsetZ"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "int",
+					"name": "bone"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "float",
+					"name": "scale"
 				}
 			],
-			"return_type": "Any"
+			"return_type": "BOOL"
 		},
 		"0x7C714DA3": {
 			"name": "START_PARTICLE_FX_NON_LOOPED_ON_VEHICLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "ptfxName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "offsetX"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "offsetY"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "offsetZ"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "scale"
 				}
 			],
-			"return_type": "Any"
+			"return_type": "BOOL"
 		},
 		"0xF9617406": {
 			"name": "START_PARTICLE_FX_NON_LOOPED_ON_OBJECT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "ptfxName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "offsetX"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "offsetY"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "offsetZ"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "scale"
 				}
 			],
-			"return_type": "Any"
+			"return_type": "BOOL"
 		},
 		"0xD348E3E6": {
 			"name": "START_PARTICLE_FX_LOOPED_AT_COORD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "ptfxName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "offsetX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "offsetY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "offsetZ"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "scale"
 				}
 			],
-			"return_type": "Any"
+			"return_type": "ScrHandle"
 		},
 		"0xF8FC196F": {
 			"name": "START_PARTICLE_FX_LOOPED_ON_PED_BONE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "ptfxName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "offsetX"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "offsetY"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "offsetZ"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "int",
+					"name": "bone"
 				},
 				{
-					"type": "Any",
-					"name": "p9"
+					"type": "float",
+					"name": "scale"
 				}
 			],
-			"return_type": "Any"
+			"return_type": "ScrHandle"
 		},
 		"0x58AA9FC3": {
 			"name": "START_PARTICLE_FX_LOOPED_ON_VEHICLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "ptfxName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "offsetX"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "offsetY"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "offsetZ"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "scale"
 				}
 			],
-			"return_type": "Any"
+			"return_type": "ScrHandle"
 		},
 		"0x4B00E9F2": {
 			"name": "START_PARTICLE_FX_LOOPED_ON_OBJECT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "const char*",
+					"name": "ptfxName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Object",
+					"name": "object"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "offsetX"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "offsetY"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "offsetZ"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p8"
+					"type": "float",
+					"name": "scale"
 				}
 			],
-			"return_type": "Any"
+			"return_type": "ScrHandle"
 		},
 		"0x1B34D211": {
 			"name": "START_PARTICLE_FX_LOOPED_ON_OBJECT_BONE",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "const char*",
+					"name": "ptfxName"
+				},
+				{
+					"type": "Object",
+					"name": "object"
+				},
+				{
+					"type": "float",
+					"name": "offsetX"
+				},
+				{
+					"type": "float",
+					"name": "offsetY"
+				},
+				{
+					"type": "float",
+					"name": "offsetZ"
+				},
+				{
+					"type": "float",
+					"name": "rotX"
+				},
+				{
+					"type": "float",
+					"name": "rotY"
+				},
+				{
+					"type": "float",
+					"name": "rotZ"
+				},
+				{
+					"type": "int",
+					"name": "bone"
+				},
+				{
+					"type": "float",
+					"name": "scale"
+				}
+			],
+			"return_type": "ScrHandle"
 		},
 		"0xD245455B": {
 			"name": "STOP_PARTICLE_FX_LOOPED",
@@ -45641,8 +45682,41 @@
 		"0x641F7790": {
 			"name": "SET_PARTICLE_FX_LOOPED_OFFSETS",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "ScrHandle",
+					"name": "ptfxHandle"
+				},
+				{
+					"type": "float",
+					"name": "p1"
+				},
+				{
+					"type": "float",
+					"name": "p2"
+				},
+				{
+					"type": "float",
+					"name": "p3"
+				},
+				{
+					"type": "float",
+					"name": "p4"
+				},
+				{
+					"type": "float",
+					"name": "p5"
+				},
+				{
+					"type": "float",
+					"name": "p6"
+				},
+				{
+					"type": "float",
+					"name": "p7"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x1CBC1373": {
 			"name": "SET_PARTICLE_FX_LOOPED_EVOLUTION",
@@ -45666,8 +45740,13 @@
 		"0x19EC0001": {
 			"name": "SET_PARTICLE_FX_CAM_INSIDE_VEHICLE",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "BOOL",
+					"name": "toggle"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x2CDB19BD": {
 			"name": "REMOVE_PARTICLE_FX_FROM_PED",
@@ -45716,32 +45795,57 @@
 		"0x6DF10D45": {
 			"name": "ADD_GROUND_PLANE_COLLISION_TO_PARTICLE_FX",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "ScrHandle",
+					"name": "ptfxHandle"
+				},
+				{
+					"type": "float",
+					"name": "p1"
+				},
+				{
+					"type": "float",
+					"name": "p2"
+				},
+				{
+					"type": "float",
+					"name": "p3"
+				},
+				{
+					"type": "float",
+					"name": "p4"
+				},
+				{
+					"type": "float",
+					"name": "p5"
+				}
+			],
+			"return_type": "void"
 		},
 		"0xA3D7374F": {
 			"name": "ADD_NEARBY_COLLISION_TO_PARTICLE_FX",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "ScrHandle",
+					"name": "ptfxHandle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "radius"
 				}
 			],
 			"return_type": "void"
