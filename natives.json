@@ -2487,35 +2487,35 @@
 					"name": "camName"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "posX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "posY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "posZ"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "fieldOfView"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p8"
 				}
 			],
@@ -2700,43 +2700,43 @@
 					"name": "cam"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "posX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "posY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "posZ"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "rotX"
 				},
 				{
-					"type": "Any",
-					"name": "p5"
+					"type": "float",
+					"name": "rotY"
 				},
 				{
-					"type": "Any",
-					"name": "p6"
+					"type": "float",
+					"name": "rotZ"
 				},
 				{
-					"type": "Any",
-					"name": "p7"
+					"type": "float",
+					"name": "fieldOfView"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p8"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p9"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p10"
 				}
 			],
@@ -3057,20 +3057,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void"
@@ -3080,27 +3080,27 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "offsetX"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "offsetY"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "offsetZ"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				}
 			],
@@ -3111,27 +3111,27 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "offsetX"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "offsetY"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "offsetZ"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				}
 			],
@@ -3140,16 +3140,41 @@
 		"0xC2B50105": {
 			"name": "POINT_CAM_AT_OBJECT",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Cam",
+					"name": "cam"
+				},
+				{
+					"type": "Object",
+					"name": "object"
+				},
+				{
+					"type": "float",
+					"name": "offsetX"
+				},
+				{
+					"type": "float",
+					"name": "offsetY"
+				},
+				{
+					"type": "float",
+					"name": "offsetZ"
+				},
+				{
+					"type": "BOOL",
+					"name": "p5"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x5435F6A5": {
 			"name": "STOP_CAM_POINTING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				}
 			],
 			"return_type": "void"
@@ -3163,32 +3188,65 @@
 		"0xAD3C7EAA": {
 			"name": "ADD_CAM_SPLINE_NODE",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Cam",
+					"name": "cam"
+				},
+				{
+					"type": "float",
+					"name": "x"
+				},
+				{
+					"type": "float",
+					"name": "y"
+				},
+				{
+					"type": "float",
+					"name": "z"
+				},
+				{
+					"type": "float",
+					"name": "xRot"
+				},
+				{
+					"type": "float",
+					"name": "yRot"
+				},
+				{
+					"type": "float",
+					"name": "zRot"
+				},
+				{
+					"type": "int",
+					"name": "length"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x7983E7F0": {
 			"name": "SET_CAM_ACTIVE_WITH_INTERP",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "camTo"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Cam",
+					"name": "camFrom"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "duration"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "easeLocation"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "int",
+					"name": "easeRotation"
 				}
 			],
 			"return_type": "void"
@@ -3196,24 +3254,29 @@
 		"0x7159CB5D": {
 			"name": "IS_CAM_INTERPOLATING",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Cam",
+					"name": "cam"
+				}
+			],
+			"return_type": "BOOL"
 		},
 		"0x1D4211B0": {
 			"name": "SHAKE_CAM",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "shakeName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "amplitude"
 				}
 			],
 			"return_type": "void"
@@ -3232,19 +3295,28 @@
 		"0x60FF6382": {
 			"name": "SET_CAM_SHAKE_AMPLITUDE",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Cam",
+					"name": "cam"
+				},
+				{
+					"type": "float",
+					"name": "amplitude"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x40D0EB87": {
 			"name": "STOP_CAM_SHAKING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -3253,8 +3325,53 @@
 		"0xC64D1A59": {
 			"name": "SET_HANDYCAM_SHAKE",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Cam",
+					"name": "cam"
+				},
+				{
+					"type": "BOOL",
+					"name": "p1"
+				},
+				{
+					"type": "BOOL",
+					"name": "p2"
+				},
+				{
+					"type": "int",
+					"name": "p3"
+				},
+				{
+					"type": "float",
+					"name": "p4"
+				},
+				{
+					"type": "float",
+					"name": "p5"
+				},
+				{
+					"type": "float",
+					"name": "p6"
+				},
+				{
+					"type": "float",
+					"name": "p7"
+				},
+				{
+					"type": "float",
+					"name": "p8"
+				},
+				{
+					"type": "float",
+					"name": "p9"
+				},
+				{
+					"type": "int",
+					"name": "p10"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x9CAA05FA": {
 			"name": "IS_SCREEN_FADED_OUT",
@@ -3640,22 +3757,22 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Cam",
+					"name": "cam"
 				}
 			],
-			"return_type": "Any"
+			"return_type": "BOOL"
 		},
 		"0xC0B3AD61": {
 			"name": "IS_BULLET_CAMERA_RUNNING",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				}
 			],
-			"return_type": "Any"
+			"return_type": "BOOL"
 		},
 		"0x536FD4DA": {
 			"name": "SETUP_BULLET_CAMERA_SCENE",
@@ -3879,11 +3996,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -3905,11 +4022,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -4089,11 +4206,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p0"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				}
 			],
@@ -4104,8 +4221,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void"
@@ -4170,8 +4287,17 @@
 		"0x492BDFA1": {
 			"name": "PLAY_KILLSTRIP_LOCAL",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped1"
+				},
+				{
+					"type": "Ped",
+					"name": "ped2"
+				}
+			],
+			"return_type": "void"
 		},
 		"0xABE10E99": {
 			"name": "FREEZE_CURRENT_PANEL",
@@ -4184,8 +4310,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void"
@@ -4195,8 +4321,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void"
@@ -4206,12 +4332,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "modifier"
 				}
 			],
 			"return_type": "void"
@@ -4221,12 +4347,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "index"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "dir"
 				}
 			],
 			"return_type": "void"
@@ -4236,8 +4362,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void"
@@ -4247,12 +4373,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "duration"
 				}
 			],
 			"return_type": "void"
@@ -4262,12 +4388,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "duration"
 				}
 			],
 			"return_type": "void"
@@ -4275,28 +4401,37 @@
 		"0xFF7BF49E": {
 			"name": "CAMERA_POINT_AT_OBJECT",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Object",
+					"name": "object"
+				},
+				{
+					"type": "int",
+					"name": "duration"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x5F3C6D7A": {
 			"name": "CAMERA_POINT_AT_COORD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "int",
+					"name": "duration"
 				}
 			],
 			"return_type": "void"
@@ -4686,7 +4821,7 @@
 			"name": "IS_ANIMATED_CAMERA_PLAYING",
 			"comment": "",
 			"params": [],
-			"return_type": "Any"
+			"return_type": "BOOL"
 		},
 		"0xCA7616AE": {
 			"name": "CAMERA_ANIMATED_START_POSITION",
@@ -11353,7 +11488,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "reasonTextLabel"
 				}
 			],
 			"return_type": "void"
@@ -11364,7 +11499,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "p0"
+					"name": "reasonTextLabel"
 				}
 			],
 			"return_type": "void"
@@ -11516,7 +11651,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "boxName"
+					"name": "name"
 				}
 			],
 			"return_type": "Vector3"
@@ -11527,7 +11662,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "volumeName"
+					"name": "name"
 				}
 			],
 			"return_type": "Vector3"
@@ -12563,11 +12698,11 @@
 				},
 				{
 					"type": "int",
-					"name": "p1"
+					"name": "duration"
 				},
 				{
 					"type": "int",
-					"name": "intensity"
+					"name": "frequency"
 				}
 			],
 			"return_type": "void"
@@ -18001,7 +18136,7 @@
 				},
 				{
 					"type": "int",
-					"name": "boneIndex"
+					"name": "bone"
 				},
 				{
 					"type": "BOOL",
@@ -18210,32 +18345,149 @@
 		"0x3EFBDD9B": {
 			"name": "SET_PED_ANGLED_DEFENSIVE_AREA",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "float",
+					"name": "x1"
+				},
+				{
+					"type": "float",
+					"name": "y1"
+				},
+				{
+					"type": "float",
+					"name": "z1"
+				},
+				{
+					"type": "float",
+					"name": "x2"
+				},
+				{
+					"type": "float",
+					"name": "y2"
+				},
+				{
+					"type": "float",
+					"name": "z2"
+				},
+				{
+					"type": "float",
+					"name": "angle"
+				}
+			],
+			"return_type": "void"
 		},
 		"0xBD96D8E8": {
 			"name": "SET_PED_SPHERE_DEFENSIVE_AREA",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "float",
+					"name": "x"
+				},
+				{
+					"type": "float",
+					"name": "y"
+				},
+				{
+					"type": "float",
+					"name": "z"
+				},
+				{
+					"type": "float",
+					"name": "radius"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x74BDA7CE": {
 			"name": "SET_PED_DEFENSIVE_AREA_ATTACHED_TO_PED",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "Ped",
+					"name": "ped2"
+				},
+				{
+					"type": "float",
+					"name": "x1"
+				},
+				{
+					"type": "float",
+					"name": "y1"
+				},
+				{
+					"type": "float",
+					"name": "z1"
+				},
+				{
+					"type": "float",
+					"name": "x2"
+				},
+				{
+					"type": "float",
+					"name": "y2"
+				},
+				{
+					"type": "float",
+					"name": "z2"
+				},
+				{
+					"type": "float",
+					"name": "angle"
+				},
+				{
+					"type": "BOOL",
+					"name": "p9"
+				}
+			],
+			"return_type": "void"
 		},
 		"0xB66B0C9A": {
 			"name": "SET_PED_DEFENSIVE_AREA_DIRECTION",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "float",
+					"name": "xDir"
+				},
+				{
+					"type": "float",
+					"name": "yDir"
+				},
+				{
+					"type": "float",
+					"name": "zDir"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x34AAAFA5": {
 			"name": "REMOVE_PED_DEFENSIVE_AREA",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				}
+			],
+			"return_type": "void"
 		},
 		"0xF6589BD1": {
 			"name": "SET_PED_CAN_MOVE_WHEN_INJURED",
@@ -18337,7 +18589,7 @@
 				},
 				{
 					"type": "int",
-					"name": "boneIndex"
+					"name": "bone"
 				},
 				{
 					"type": "float",
@@ -18392,11 +18644,11 @@
 				},
 				{
 					"type": "int",
-					"name": "boneIndex1"
+					"name": "bone1"
 				},
 				{
 					"type": "int",
-					"name": "boneIndex2"
+					"name": "bone2"
 				},
 				{
 					"type": "float",
@@ -18907,20 +19159,66 @@
 		"0xA38C0234": {
 			"name": "ADD_SCENARIO_BLOCKING_AREA",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "float",
+					"name": "x1"
+				},
+				{
+					"type": "float",
+					"name": "y1"
+				},
+				{
+					"type": "float",
+					"name": "z1"
+				},
+				{
+					"type": "float",
+					"name": "x2"
+				},
+				{
+					"type": "float",
+					"name": "y2"
+				},
+				{
+					"type": "float",
+					"name": "z2"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x4DDF845F": {
 			"name": "REMOVE_SCENARIO_BLOCKING_AREAS",
 			"comment": "This native is not used in the scripts.",
 			"params": [],
-			"return_type": "Any"
+			"return_type": "void"
 		},
 		"0x80EAD297": {
 			"name": "SET_SCENARIO_PEDS_SPAWN_IN_SPHERE_AREA",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "float",
+					"name": "x"
+				},
+				{
+					"type": "float",
+					"name": "y"
+				},
+				{
+					"type": "float",
+					"name": "z"
+				},
+				{
+					"type": "float",
+					"name": "radius"
+				},
+				{
+					"type": "int",
+					"name": "p4"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x0F65B0D4": {
 			"name": "IS_PED_USING_SCENARIO",
@@ -19313,24 +19611,37 @@
 		"0x14A13274": {
 			"name": "SET_IK_ATTACH_TARGET_PED",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "Ped",
+					"name": "targetPed"
+				},
+				{
+					"type": "const char*",
+					"name": "boneName"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x77315EBE": {
 			"name": "SET_IK_ATTACH_TARGET_OBJ",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Vehicle",
+					"name": "targetVehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "boneName"
 				}
 			],
 			"return_type": "void"
@@ -19340,16 +19651,16 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Object",
+					"name": "targetObject"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "boneName"
 				}
 			],
 			"return_type": "void"
@@ -19359,8 +19670,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void"
@@ -19398,26 +19709,44 @@
 		"0x23108373": {
 			"name": "SET_PED_DONT_USE_VEHICLE_SPECIFIC_ANIMS",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "BOOL",
+					"name": "toggle"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x2AB3670B": {
 			"name": "SET_PED_GROUP_MEMBER_PASSENGER_INDEX",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "int",
+					"name": "index"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x007FED1F": {
 			"name": "SET_PED_IGNORE_LOS_CHECKS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void"
@@ -19425,8 +19754,17 @@
 		"0x542FEB4D": {
 			"name": "SET_PED_CAN_EVASIVE_DIVE",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "BOOL",
+					"name": "toggle"
+				}
+			],
+			"return_type": "void"
 		},
 		"0xFD64EAE5": {
 			"name": "SET_PED_SHOOTS_AT_COORD",
@@ -19456,27 +19794,27 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				}
 			],
@@ -19485,44 +19823,80 @@
 		"0x7820CA43": {
 			"name": "SET_PED_MODEL_IS_SUPPRESSED",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Hash",
+					"name": "modelHash"
+				},
+				{
+					"type": "BOOL",
+					"name": "toggle"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x5AD7DC55": {
 			"name": "STOP_ANY_PED_MODEL_BEING_SUPPRESSED",
 			"comment": "This native is not used in the scripts.",
 			"params": [],
-			"return_type": "Any"
+			"return_type": "void"
 		},
 		"0x6FD9A7CD": {
 			"name": "SET_PED_CAN_BE_TARGETED_WHEN_INJURED",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "BOOL",
+					"name": "toggle"
+				}
+			],
+			"return_type": "void"
 		},
 		"0xE9B97A2B": {
 			"name": "SET_PED_GENERATES_DEAD_BODY_EVENTS",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "BOOL",
+					"name": "toggle"
+				}
+			],
+			"return_type": "void"
 		},
 		"0xF4C0C377": {
 			"name": "SET_PED_WILL_ONLY_ATTACK_WANTED_PLAYER",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "BOOL",
+					"name": "toggle"
+				}
+			],
+			"return_type": "void"
 		},
 		"0xE9BD733A": {
 			"name": "SET_PED_CAN_RAGDOLL_FROM_PLAYER_IMPACT",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void"
@@ -19530,50 +19904,104 @@
 		"0x1862A461": {
 			"name": "GIVE_PED_HELMET",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "BOOL",
+					"name": "cannotRemove"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x0BEC2729": {
 			"name": "GIVE_PED_HELMET_WITH_OPTS",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "BOOL",
+					"name": "cannotRemove"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x2086B1F0": {
 			"name": "REMOVE_PED_HELMET",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "BOOL",
+					"name": "instantly"
+				}
+			],
+			"return_type": "void"
 		},
 		"0xED366E53": {
 			"name": "SET_PED_HELMET",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "BOOL",
+					"name": "canWearHelmet"
+				}
+			],
+			"return_type": "void"
 		},
 		"0xCF94BA97": {
 			"name": "SET_PED_TO_LOAD_COVER",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "BOOL",
+					"name": "toggle"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x5194658B": {
 			"name": "SET_PED_CAN_COWER_IN_COVER",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "BOOL",
+					"name": "toggle"
+				}
+			],
+			"return_type": "void"
 		},
 		"0xC1DAE216": {
 			"name": "SET_PED_CAN_PEEK_IN_COVER",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void"
@@ -19583,12 +20011,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void"
@@ -19720,63 +20148,100 @@
 		"0x571A7C60": {
 			"name": "SET_PED_CLIMB_ANIM_RATE",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "float",
+					"name": "rate"
+				}
+			],
+			"return_type": "void"
 		},
 		"0xFDB77BC9": {
 			"name": "SET_PED_EDGE_COVER_BLINDFIRE_ARC_OVERRIDE",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "float",
+					"name": "p1"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x0A76F4AE": {
 			"name": "IS_PED_IN_SPHERE_AREA_OF_ANY_ENEMY_PEDS",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "radius"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				}
 			],
-			"return_type": "Any"
+			"return_type": "BOOL"
 		},
 		"0x4AC3421E": {
 			"name": "STOP_PED_WEAPON_FIRING_WHEN_DROPPED",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x5B01902A": {
 			"name": "STOP_PED_DOING_FALL_OFF_TESTS_WHEN_SHOT",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x7CEFFA45": {
 			"name": "SET_SCRIPTED_ANIM_SEAT_OFFSET",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "float",
+					"name": "offset"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x12E62F9E": {
 			"name": "SET_PED_COMBAT_MOVEMENT",
@@ -20203,38 +20668,76 @@
 		"0xC722356B": {
 			"name": "GET_POSITION_IN_PED_RECORDING",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				}
+			],
+			"return_type": "float"
 		},
 		"0x42BD5D0F": {
 			"name": "GET_TIME_POSITION_IN_PED_RECORDING",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				}
+			],
+			"return_type": "float"
 		},
 		"0x797CAE4F": {
 			"name": "SET_PED_STEERS_AROUND_PEDS",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "BOOL",
+					"name": "toggle"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x3FEB6AB3": {
 			"name": "GET_PED_STEERS_AROUND_PEDS",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				}
+			],
+			"return_type": "BOOL"
 		},
 		"0x3BD9B0A6": {
 			"name": "SET_PED_STEERS_AROUND_OBJECTS",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "BOOL",
+					"name": "toggle"
+				}
+			],
+			"return_type": "void"
 		},
 		"0xE4E47CBF": {
 			"name": "GET_PED_STEERS_AROUND_OBJECTS",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				}
+			],
+			"return_type": "BOOL"
 		},
 		"0x33AAB546": {
 			"name": "GAMEPLAY_HELPER_BOX_CREATE_PED_ATTACHED",
@@ -20246,7 +20749,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "boxName"
+					"name": "name"
 				},
 				{
 					"type": "Ped",
@@ -20300,22 +20803,51 @@
 			"return_type": "void"
 		},
 		"0xF60A8C33": {
-			"name": "_0xF60A8C33",
+			"name": "GAMEPLAY_HELPER_CYLINDER_CREATE_PED_ATTACHED",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "int",
+					"name": "p0"
+				},
+				{
+					"type": "const char*",
+					"name": "name"
+				},
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "float",
+					"name": "p3"
+				},
+				{
+					"type": "float",
+					"name": "p4"
+				},
+				{
+					"type": "float",
+					"name": "p5"
+				},
+				{
+					"type": "float",
+					"name": "p6"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x0E697ED0": {
 			"name": "SET_PED_TETHERING_ADD_BOX",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "void"
@@ -20325,12 +20857,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "void"
@@ -20366,12 +20898,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "void"
@@ -20379,26 +20911,40 @@
 		"0x17ED932A": {
 			"name": "SET_PED_FLEEZONE_REMOVE_BOX",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "const char*",
+					"name": "name"
+				}
+			],
+			"return_type": "void"
 		},
 		"0xAE3D290C": {
 			"name": "RESET_PED_FLEEZONE",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x3C2DBC49": {
 			"name": "SET_PED_FLEEZONE_OPTION",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "option"
 				}
 			],
 			"return_type": "void"
@@ -20408,12 +20954,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "void"
@@ -20423,12 +20969,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "name"
 				}
 			],
 			"return_type": "void"
@@ -20438,8 +20984,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void"
@@ -20454,7 +21000,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "boxName"
+					"name": "name"
 				}
 			],
 			"return_type": "BOOL"
@@ -20469,7 +21015,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "volumeName"
+					"name": "name"
 				}
 			],
 			"return_type": "BOOL"
@@ -20477,14 +21023,28 @@
 		"0xD4781ED2": {
 			"name": "SET_PED_SUGGESTED_COMBAT_AREA_STEP",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "float",
+					"name": "value"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x84ED684E": {
 			"name": "SET_GLOBAL_SUGGESTED_COMBAT_AREA_WEIGHT",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "float",
+					"name": "value"
+				}
+			],
+			"return_type": "void"
 		},
 		"0xEBA43DE8": {
 			"name": "IS_PED_CLONED_EVERYWHERE",
@@ -20544,7 +21104,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "p1"
+					"name": "name"
 				}
 			],
 			"return_type": "BOOL"
@@ -20598,19 +21158,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "targetPed"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				}
 			],
-			"return_type": "Any"
+			"return_type": "BOOL"
 		},
 		"0xD05D0C57": {
 			"name": "GET_PED_HAS_SEEN_DEAD_PED",
@@ -20666,23 +21226,23 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
-			"return_type": "Any"
+			"return_type": "BOOL"
 		},
 		"0x2B499736": {
 			"name": "ENABLE_PED_JUMPING",
@@ -20738,27 +21298,27 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "actionId"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "int",
+					"name": "duration"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				}
 			],
@@ -20769,15 +21329,15 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "actionId"
 				}
 			],
-			"return_type": "Any"
+			"return_type": "int"
 		},
 		"0x11128D62": {
 			"name": "PED_FINISH_ACTION_INTENTION",
@@ -20799,20 +21359,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "xDir"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "yDir"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "zDir"
 				}
 			],
 			"return_type": "void"
@@ -20837,12 +21397,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "range"
 				}
 			],
 			"return_type": "void"
@@ -20852,12 +21412,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void"
@@ -20882,12 +21442,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "targetPed"
 				}
 			],
 			"return_type": "void"
@@ -20897,20 +21457,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void"
@@ -20920,8 +21480,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void"
@@ -20931,8 +21491,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void"
@@ -20957,23 +21517,23 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "const char*",
+					"name": "dictName"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "const char*",
+					"name": "animName"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				}
 			],
@@ -20999,12 +21559,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "chance"
 				}
 			],
 			"return_type": "void"
@@ -21014,12 +21574,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "int",
+					"name": "chance"
 				}
 			],
 			"return_type": "void"
@@ -21046,24 +21606,24 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "heading"
 				}
 			],
 			"return_type": "void"
@@ -21092,7 +21652,7 @@
 					"name": "toggle"
 				}
 			],
-			"return_type": "Any"
+			"return_type": "void"
 		},
 		"0x16D410E1": {
 			"name": "SET_NO_COLLISION_TO_PED",
@@ -22599,20 +23159,20 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "xOffset"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "yOffset"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "zOffset"
 				}
 			],
 			"return_type": "void"
@@ -23357,7 +23917,7 @@
 		},
 		"0x6E31E993": {
 			"name": "GET_PLAYER_PED",
-			"comment": "Returns the ped handle of the given player.",
+			"comment": "",
 			"params": [
 				{
 					"type": "Player",
@@ -26381,49 +26941,71 @@
 		"0x4D7BF56D": {
 			"name": "TASK_LEAVE_VEHICLE_IN_DIRECTION",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "Vehicle",
+					"name": "vehicle"
+				},
+				{
+					"type": "BOOL",
+					"name": "direction"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x4293601F": {
 			"name": "TASK_GET_OFF_BOAT",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Vehicle",
+					"name": "boat"
+				},
+				{
+					"type": "int",
+					"name": "duration"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x87354C85": {
 			"name": "TASK_GET_ON_CUSTOM_VEHICLE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Vehicle",
+					"name": "vehicle"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p3"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p7"
 				}
 			],
@@ -26633,7 +27215,7 @@
 			"name": "TASK_FLUSH_ROUTE",
 			"comment": "This native is not used in the scripts.",
 			"params": [],
-			"return_type": "Any"
+			"return_type": "void"
 		},
 		"0x43271F69": {
 			"name": "TASK_EXTEND_ROUTE",
@@ -29603,12 +30185,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void"
@@ -29618,12 +30200,12 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "BOOL",
+					"name": "toggle"
 				}
 			],
 			"return_type": "void"
@@ -29825,28 +30407,37 @@
 		"0x806DCEC3": {
 			"name": "TASK_DEFAULT_AIM_AT_PED",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				},
+				{
+					"type": "Ped",
+					"name": "targetPed"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x24190EC9": {
 			"name": "TASK_DEFAULT_AIM_AT_COORD",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				}
 			],
 			"return_type": "void"
@@ -29854,14 +30445,24 @@
 		"0x5748EDC0": {
 			"name": "TASK_DEFAULT_AIM_AHEAD",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				}
+			],
+			"return_type": "void"
 		},
 		"0x009F9B15": {
 			"name": "TASK_CLEAR_DEFAULT_AIM",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Ped",
+					"name": "ped"
+				}
+			],
+			"return_type": "void"
 		},
 		"0xC5FA9CD6": {
 			"name": "TASK_SURRENDER",
@@ -29873,11 +30474,11 @@
 				},
 				{
 					"type": "Ped",
-					"name": "ped2"
+					"name": "targetPed"
 				},
 				{
 					"type": "float",
-					"name": "unk"
+					"name": "heading"
 				}
 			],
 			"return_type": "void"
@@ -29892,7 +30493,7 @@
 				},
 				{
 					"type": "Ped",
-					"name": "ped2"
+					"name": "targetPed"
 				},
 				{
 					"type": "BOOL",
@@ -29954,11 +30555,11 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -29969,19 +30570,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -29997,7 +30598,7 @@
 				},
 				{
 					"type": "Ped",
-					"name": "ped2"
+					"name": "targetPed"
 				},
 				{
 					"type": "BOOL",
@@ -30044,19 +30645,19 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p3"
 				}
 			],
@@ -30150,7 +30751,7 @@
 				},
 				{
 					"type": "BOOL",
-					"name": "p5"
+					"name": "isNetwork"
 				},
 				{
 					"type": "BOOL",
@@ -31920,7 +32521,7 @@
 				},
 				{
 					"type": "int",
-					"name": "boneIndex"
+					"name": "bone"
 				},
 				{
 					"type": "float",
@@ -31963,11 +32564,11 @@
 				},
 				{
 					"type": "int",
-					"name": "boneIndex1"
+					"name": "bone1"
 				},
 				{
 					"type": "int",
-					"name": "boneIndex2"
+					"name": "bone2"
 				},
 				{
 					"type": "float",
@@ -32030,7 +32631,7 @@
 				},
 				{
 					"type": "int",
-					"name": "boneIndex"
+					"name": "bone"
 				},
 				{
 					"type": "float",
@@ -32717,7 +33318,7 @@
 				},
 				{
 					"type": "int",
-					"name": "boneIndex"
+					"name": "bone"
 				},
 				{
 					"type": "BOOL",
@@ -34684,7 +35285,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "boxName"
+					"name": "name"
 				},
 				{
 					"type": "Vehicle",
@@ -35401,7 +36002,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "boxName"
+					"name": "name"
 				}
 			],
 			"return_type": "void"
@@ -37088,7 +37689,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "boxName"
+					"name": "name"
 				}
 			],
 			"return_type": "BOOL"
@@ -37443,7 +38044,7 @@
 				},
 				{
 					"type": "int",
-					"name": "boneIndex"
+					"name": "bone"
 				},
 				{
 					"type": "BOOL",
@@ -37544,25 +38145,51 @@
 		"0x02AD2B87": {
 			"name": "HAS_FRAGMENT_ANY_OF_OBJECT_BEEN_DAMAGED",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "Object",
+					"name": "object"
+				}
+			],
+			"return_type": "BOOL"
 		},
 		"0xD9EA7576": {
 			"name": "HAS_FRAGMENT_ROOT_OF_OBJECT_BEEN_DAMAGED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Object",
+					"name": "object"
 				}
 			],
-			"return_type": "Any"
+			"return_type": "BOOL"
 		},
 		"0x08DF011C": {
 			"name": "HAS_FRAGMENT_ROOT_OF_CLOSEST_OBJECT_OF_TYPE_BEEN_DAMAGED",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "float",
+					"name": "x"
+				},
+				{
+					"type": "float",
+					"name": "y"
+				},
+				{
+					"type": "float",
+					"name": "z"
+				},
+				{
+					"type": "float",
+					"name": "radius"
+				},
+				{
+					"type": "Hash",
+					"name": "modelHash"
+				}
+			],
+			"return_type": "BOOL"
 		},
 		"0x730EAA9E": {
 			"name": "HAS_OBJECT_BEEN_DAMAGED_BY_PED",
@@ -37582,8 +38209,33 @@
 		"0x25620891": {
 			"name": "HAS_CLOSEST_OBJECT_OF_TYPE_BEEN_DAMAGED_BY_PED",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "float",
+					"name": "x"
+				},
+				{
+					"type": "float",
+					"name": "y"
+				},
+				{
+					"type": "float",
+					"name": "z"
+				},
+				{
+					"type": "float",
+					"name": "radius"
+				},
+				{
+					"type": "Hash",
+					"name": "modelHash"
+				},
+				{
+					"type": "Ped",
+					"name": "ped"
+				}
+			],
+			"return_type": "BOOL"
 		},
 		"0x7098F746": {
 			"name": "HAS_OBJECT_BEEN_DAMAGED_BY_VEHICLE",
@@ -37661,37 +38313,58 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "radius"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "Hash",
+					"name": "modelHash"
 				},
 				{
-					"type": "Any",
+					"type": "float",
 					"name": "p5"
 				}
 			],
-			"return_type": "Any"
+			"return_type": "BOOL"
 		},
 		"0xF7AE77B6": {
 			"name": "IS_NON_FRAG_OBJECT_SMASHED",
 			"comment": "This native is not used in the scripts.",
-			"params": [],
-			"return_type": "Any"
+			"params": [
+				{
+					"type": "float",
+					"name": "x"
+				},
+				{
+					"type": "float",
+					"name": "y"
+				},
+				{
+					"type": "float",
+					"name": "z"
+				},
+				{
+					"type": "float",
+					"name": "radius"
+				},
+				{
+					"type": "Hash",
+					"name": "modelHash"
+				}
+			],
+			"return_type": "BOOL"
 		},
 		"0x88EB06E8": {
 			"name": "SET_OBJECT_LIGHTS",
@@ -38057,27 +38730,27 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "modelHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "x"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "y"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "z"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p4"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p5"
 				}
 			],
