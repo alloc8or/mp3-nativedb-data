@@ -13517,20 +13517,7 @@
 			"params": [
 				{
 					"type": "const char*",
-					"name": "name"
-				}
-			],
-			"return_type": "Vector3",
-			"variadic": false,
-			"unused": true
-		},
-		"0x2A9EA7D3": {
-			"name": "GET_GAMEPLAY_HELPER_VOLUME_COORD",
-			"comment": "",
-			"params": [
-				{
-					"type": "const char*",
-					"name": "name"
+					"name": "boxName"
 				}
 			],
 			"return_type": "Vector3",
@@ -13630,16 +13617,38 @@
 		"0x2A9EA7D3": {
 			"name": "GET_GAMEPLAY_HELPER_VOLUME_COORD",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "volumeName"
+				}
+			],
+			"return_type": "Vector3",
 			"variadic": false,
 			"unused": true
 		},
 		"0xAE3938DF": {
 			"name": "SET_GAMEPLAY_HELPER_VOLUME_COORD",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "volumeName"
+				},
+				{
+					"type": "float",
+					"name": "x"
+				},
+				{
+					"type": "float",
+					"name": "y"
+				},
+				{
+					"type": "float",
+					"name": "z"
+				}
+			],
+			"return_type": "void",
 			"variadic": false,
 			"unused": true
 		},
@@ -40269,7 +40278,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "name"
+					"name": "boxName"
 				},
 				{
 					"type": "Vehicle",
@@ -41076,7 +41085,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "name"
+					"name": "boxName"
 				}
 			],
 			"return_type": "void",
@@ -42959,7 +42968,7 @@
 				},
 				{
 					"type": "const char*",
-					"name": "name"
+					"name": "boxName"
 				}
 			],
 			"return_type": "BOOL",
