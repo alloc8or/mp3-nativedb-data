@@ -48791,7 +48791,7 @@
 					"name": "weapon"
 				}
 			],
-			"return_type": "int",
+			"return_type": "Hash",
 			"variadic": false,
 			"unused": false
 		},
