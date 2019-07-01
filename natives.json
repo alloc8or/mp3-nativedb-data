@@ -28368,7 +28368,7 @@
 				{
 					"type": "BOOL",
 					"name": "p3"
-				},
+				}
 			],
 			"return_type": "BOOL",
 			"variadic": false,
