@@ -40033,7 +40033,7 @@
 			"variadic": false,
 			"unused": true
 		},
-		"0xDF932BC,": {
+		"0x0DF932BC": {
 			"name": "SET_VEHICLE_CAN_TRIGGER_BULLET_CAM",
 			"comment": "",
 			"params": [
