@@ -2447,9 +2447,34 @@
 		},
 		"0x714DA5BB": {
 			"name": "AUDIO_MUSIC_ONE_SHOT",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"comment": "Does nothing.",
+			"params": [
+				{
+					"type": "Any*",
+					"name": "p0"
+				},
+				{
+					"type": "Any*",
+					"name": "p1"
+				},
+				{
+					"type": "Any",
+					"name": "p2"
+				},
+				{
+					"type": "Any",
+					"name": "p3"
+				},
+				{
+					"type": "BOOL",
+					"name": "p4"
+				},
+				{
+					"type": "BOOL",
+					"name": "p5"
+				}
+			],
+			"return_type": "void",
 			"variadic": false,
 			"unused": true
 		},
@@ -2463,11 +2488,11 @@
 		},
 		"0xA34A3F55": {
 			"name": "AUDIO_MUSIC_ADJUST_VOLUME",
-			"comment": "",
+			"comment": "min: -100.0\nmax: 6.0",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "float",
+					"name": "volume"
 				}
 			],
 			"return_type": "void",
@@ -2484,9 +2509,14 @@
 		},
 		"0x789C753C": {
 			"name": "AUDIO_MUSIC_SET_STATE",
-			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"comment": "Known states:\nscripted\nunscripted\nsilent",
+			"params": [
+				{
+					"type": "const char*",
+					"name": "state"
+				}
+			],
+			"return_type": "void",
 			"variadic": false,
 			"unused": true
 		},
@@ -2514,8 +2544,13 @@
 		"0x5F48A85B": {
 			"name": "AUDIO_MUSIC_RESUME",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "Any",
+					"name": "unused"
+				}
+			],
+			"return_type": "void",
 			"variadic": false,
 			"unused": true
 		},
@@ -28319,31 +28354,60 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Player",
+					"name": "player"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p1"
 				},
 				{
-					"type": "Any",
+					"type": "const char*",
 					"name": "p2"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
-				}
+				},
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"variadic": false,
 			"unused": false
 		},
 		"0x004C99D6": {
 			"name": "PLAYER_USE_COVERLINE",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "Player",
+					"name": "player"
+				},
+				{
+					"type": "const char*",
+					"name": "p1"
+				},
+				{
+					"type": "const char*",
+					"name": "p2"
+				},
+				{
+					"type": "BOOL",
+					"name": "p3"
+				},
+				{
+					"type": "float",
+					"name": "p4"
+				},
+				{
+					"type": "float",
+					"name": "p5"
+				},
+				{
+					"type": "float",
+					"name": "p6"
+				}
+			],
+			"return_type": "BOOL",
 			"variadic": false,
 			"unused": true
 		},
@@ -40902,8 +40966,13 @@
 		"0x22DEA3F4": {
 			"name": "GET_NUMBER_OF_PICKUPS_AND_PLACEMENTS_OF_TYPE",
 			"comment": "",
-			"params": [],
-			"return_type": "Any",
+			"params": [
+				{
+					"type": "Hash",
+					"name": "pickupOrPlacementHash"
+				}
+			],
+			"return_type": "int",
 			"variadic": false,
 			"unused": true
 		},
@@ -49469,7 +49538,7 @@
 					"name": "weapon"
 				}
 			],
-			"return_type": "Weapon",
+			"return_type": "Pickup",
 			"variadic": false,
 			"unused": false
 		},
@@ -55483,8 +55552,8 @@
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				}
 			],
 			"return_type": "void",
