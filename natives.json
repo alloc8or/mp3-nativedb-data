@@ -8204,7 +8204,7 @@
 			"unused": true
 		},
 		"0x6A70F177": {
-			"name": "_0x6A70F177",
+			"name": "DEATHRECORD_LOCAL_HAS_DAMAGED_WITH",
 			"comment": "",
 			"params": [
 				{
@@ -9755,7 +9755,7 @@
 			"unused": true
 		},
 		"0xD4A9EE97": {
-			"name": "_0xD4A9EE97",
+			"name": "ADD_TRACKER_SPOT_LIGHT",
 			"comment": "",
 			"params": [
 				{
@@ -9772,7 +9772,7 @@
 			"unused": true
 		},
 		"0xD0732DBA": {
-			"name": "_0xD0732DBA",
+			"name": "ADD_TRACKER_PROP",
 			"comment": "",
 			"params": [
 				{
@@ -9793,7 +9793,7 @@
 			"unused": false
 		},
 		"0x5851DB72": {
-			"name": "_0x5851DB72",
+			"name": "CONFIGURE_TRACKER_SPOT_LIGHT",
 			"comment": "",
 			"params": [
 				{
@@ -9850,7 +9850,7 @@
 			"unused": false
 		},
 		"0x2C3949FE": {
-			"name": "_0x2C3949FE",
+			"name": "SET_TRACKER_SPOT_LIGHT_TARGET",
 			"comment": "",
 			"params": [
 				{
@@ -9867,7 +9867,7 @@
 			"unused": false
 		},
 		"0xA634EDCD": {
-			"name": "_0xA634EDCD",
+			"name": "CONFIGURE_TRACKER_INTERIOR_TARGET",
 			"comment": "",
 			"params": [
 				{
@@ -9892,7 +9892,7 @@
 			"unused": false
 		},
 		"0x518EB5A0": {
-			"name": "_0x518EB5A0",
+			"name": "CONFIGURE_TRACKER_FAKEINTERIOR",
 			"comment": "",
 			"params": [
 				{
@@ -12611,7 +12611,7 @@
 			"unused": false
 		},
 		"0xEB2EC892": {
-			"name": "_0xEB2EC892",
+			"name": "ADD_GRIT_SEGMENT",
 			"comment": "",
 			"params": [
 				{
@@ -12628,7 +12628,7 @@
 			"unused": false
 		},
 		"0x4F04780C": {
-			"name": "_0x4F04780C",
+			"name": "MODIFY_GRIT_SEGMENTS",
 			"comment": "",
 			"params": [
 				{
@@ -12641,7 +12641,7 @@
 			"unused": true
 		},
 		"0xA5B5413B": {
-			"name": "_0xA5B5413B",
+			"name": "MODIFY_GRIT_VALUE",
 			"comment": "",
 			"params": [
 				{
@@ -12658,7 +12658,7 @@
 			"unused": false
 		},
 		"0x8FBEC493": {
-			"name": "_0x8FBEC493",
+			"name": "CAN_CONSUME_GRIT_SEGMENTS",
 			"comment": "",
 			"params": [
 				{
@@ -12671,7 +12671,7 @@
 			"unused": true
 		},
 		"0xB2945C4B": {
-			"name": "_0xB2945C4B",
+			"name": "SET_NUM_GRIT_SEGS",
 			"comment": "",
 			"params": [
 				{
